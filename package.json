@@ -1,0 +1,21 @@
+{
+    "name": "rabbitmq-example",
+    "version": "0.0.1",
+    "dependencies": {
+        "amqplib": "^0.10.4",
+        "dotenv": "16.4.5"
+    },
+    "scripts": {
+        "build": "tsc -p .",
+        "consumer": "node build/consumer.js",
+        "producer": "node build/producer.js",
+        "subscriber": "node build/subscriber.js",
+        "publisher": "node build/publisher.js"
+    },
+    "devDependencies": {
+        "@types/amqplib": "^0.10.5",
+        "@types/dotenv": "^8.2.0",
+        "@types/node": "^20.14.8",
+        "typescript": "^5.5.2"
+    }
+}
